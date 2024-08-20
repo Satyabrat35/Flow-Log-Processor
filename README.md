@@ -7,8 +7,13 @@ traffic based on their tags and port/protocol combinations.
 Instead of loading the entire file content into memory and reading
 line by line, I am reading the file in smaller chunks using a buffer size, which
 can process the data incrementally without overwhelming the system's memory.
-This is beneficial for files `>1GB`. This is an efficient way of reading and processing files.
-Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-with-efficient-file-reading-in-chunks-c6f7cf153ccd
+This is beneficial for files `>100MBs`. This is an efficient way of reading and processing files.
+
+Reference -
+
+https://www.iditect.com/guide/python/python_howto_read_big_file_in_chunks.html
+
+https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-with-efficient-file-reading-in-chunks-c6f7cf153ccd
 
 ## Requirements 
 1. The flow log data file follows the format:
