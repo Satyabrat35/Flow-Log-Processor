@@ -46,7 +46,8 @@ It ensures that the input files are correctly formatted and exist at the specifi
 ## Output
 main.py
 
-`(base) satya@Kynes-Peace illumio % gtime -v python main.py
+```
+(base) satya@Kynes-Peace illumio % gtime -v python main.py
 [INFO] Loading protocol assignments from files/protocol_assignment.csv...
 [INFO] Generating lookup table from files/lookup_large.csv...
 [INFO] Analyzing and processing flow logs from files/flow_log_large.txt...
@@ -74,6 +75,39 @@ Final Results written to -> output_large.csv
         Signals delivered: 0
         Page size (bytes): 16384
         Exit status: 0
-`
+```
 
-![test_py.jpg](img/test_py.jpg)
+tests.py
+
+```
+(base) satya@Kynes-Peace illumio % gtime -v python tests.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK
+        Command being timed: "python tests.py"
+        User time (seconds): 0.04
+        System time (seconds): 0.06
+        Percent of CPU this job got: 40%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.26
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 15008
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 1024
+        Minor (reclaiming a frame) page faults: 3760
+        Voluntary context switches: 869
+        Involuntary context switches: 458
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 16384
+        Exit status: 0
+
+```
