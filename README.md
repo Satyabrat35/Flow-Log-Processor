@@ -15,5 +15,11 @@ Instead of loading the entire file content into memory and reading
 line by line, I am reading the file in smaller chunks using a buffer size, which
 can process the data incrementally without overwhelming the system's memory.
 This is beneficial for files `>1GB`. This is an efficient way of reading and processing files.
+Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-with-efficient-file-reading-in-chunks-c6f7cf153ccd
 
 ## How to run
+1. Clone the repository - `git clone git@github.com:Satyabrat35/Flow-Log-Processor.git`
+2. Go to project directory - `cd Flow-Log-Processor`
+3. Install requirements - `pip install -r requirements.txt`
+4. Run program - `python main.py`
+5. Run tests - `python tests.py`
