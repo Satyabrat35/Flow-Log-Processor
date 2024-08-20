@@ -3,19 +3,29 @@ The Flow Log Processor is a tool to analyze and process network flow logs. It
 uses protocol and lookup tables to categorize and count different types of network 
 traffic based on their tags and port/protocol combinations.
 
-## Requirements 
-1. Input file as well as the file containing tag mappings are plain text (ascii) files  
-2. The flow log file size can be up to 10 MB 
-3. The lookup file can have up to 10000 mappings 
-4. The tags can map to more than one port, protocol combinations.  for e.g. sv_P1 and sv_P2 in the sample above. 
-5. The matches should be case insensitive 
-
 # Handle Large Files
 Instead of loading the entire file content into memory and reading
 line by line, I am reading the file in smaller chunks using a buffer size, which
 can process the data incrementally without overwhelming the system's memory.
 This is beneficial for files `>1GB`. This is an efficient way of reading and processing files.
 Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-with-efficient-file-reading-in-chunks-c6f7cf153ccd
+
+## Requirements 
+1. The flow log data file follows the format:
+
+`<version> <account-id> <interface-id> <srcaddr> <dstaddr> <srcport> <dstport> <protocol> <packets> <bytes> <start> <end> <action> <log-status>`
+2. The flow log data is in the version 2 default format, which includes 14 fields:
+
+`VERSION_2_FIELDS_COUNT = 14`
+
+`DSTPORT_FIELD_INDEX = 6`
+
+`PROTOCOL_FIELD_INDEX = 7`
+3. Input file as well as the file containing tag mappings are plain text (ascii) files  
+4. The flow log file size can be up to 10 MB 
+5. The lookup file can have up to 10000 mappings 
+6. The tags can map to more than one port, protocol combinations.  for e.g. sv_P1 and sv_P2 in the sample example
+7. The matches should be case insensitive 
 
 ## How to run
 1. Download repository (zip) - https://github.com/Satyabrat35/Flow-Log-Processor
