@@ -44,6 +44,36 @@ The script raises exceptions if input files are not found or if there are issues
 It ensures that the input files are correctly formatted and exist at the specified paths.
 
 ## Output
-![main_py.jpg](img/main_py.jpg)
+main.py
+
+`(base) satya@Kynes-Peace illumio % gtime -v python main.py
+[INFO] Loading protocol assignments from files/protocol_assignment.csv...
+[INFO] Generating lookup table from files/lookup_large.csv...
+[INFO] Analyzing and processing flow logs from files/flow_log_large.txt...
+Final Results written to -> output_large.csv
+        Command being timed: "python main.py"
+        User time (seconds): 0.14
+        System time (seconds): 0.02
+        Percent of CPU this job got: 66%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.25
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 15444
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 453
+        Minor (reclaiming a frame) page faults: 3645
+        Voluntary context switches: 305
+        Involuntary context switches: 401
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 16384
+        Exit status: 0
+`
 
 ![test_py.jpg](img/test_py.jpg)
