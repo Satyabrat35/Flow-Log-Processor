@@ -14,6 +14,7 @@ Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-wi
 1. The flow log data file follows the format:
 
 `<version> <account-id> <interface-id> <srcaddr> <dstaddr> <srcport> <dstport> <protocol> <packets> <bytes> <start> <end> <action> <log-status>`
+
 2. The flow log data is in the version 2 default format, which includes 14 fields:
 
 `VERSION_2_FIELDS_COUNT = 14`
@@ -21,6 +22,7 @@ Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-wi
 `DSTPORT_FIELD_INDEX = 6`
 
 `PROTOCOL_FIELD_INDEX = 7`
+
 3. Input file as well as the file containing tag mappings are plain text (ascii) files  
 4. The flow log file size can be up to 10 MB 
 5. The lookup file can have up to 10000 mappings 
