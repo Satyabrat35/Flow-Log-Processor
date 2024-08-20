@@ -23,3 +23,18 @@ Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-wi
 3. Install requirements - `pip install -r requirements.txt`
 4. Run program - `python main.py`
 5. Run tests - `python tests.py`
+
+## Directory
+1. `FlowLogRecords.py`: Contains functions for loading lookup tables, processing flow logs
+2. `files`: Contains sample and large flow log and look up tables
+3. `main.py`: The main script to execute the flow log processing
+4. `tests.py`: Unit Test cases
+
+## Error Handling
+The script raises exceptions if input files are not found or if there are issues processing the files.
+It ensures that the input files are correctly formatted and exist at the specified paths.
+
+## Output
+![main_py.jpg](img/main_py.jpg)
+
+![test_py.jpg](img/test_py.jpg)
