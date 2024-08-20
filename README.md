@@ -18,11 +18,10 @@ This is beneficial for files `>1GB`. This is an efficient way of reading and pro
 Reference - https://medium.com/@anuragv.1020/chunk-by-chunk-tackling-big-data-with-efficient-file-reading-in-chunks-c6f7cf153ccd
 
 ## How to run
-1. Clone the repository - `git clone git@github.com:Satyabrat35/Flow-Log-Processor.git`
-2. Go to project directory - `cd Flow-Log-Processor`
-3. Install requirements - `pip install -r requirements.txt`
-4. Run program - `python main.py`
-5. Run tests - `python tests.py`
+1. Download repository (zip) - https://github.com/Satyabrat35/Flow-Log-Processor
+2. Go to project directory - `cd Flow-Log-Processor-main`
+3. Run program - `python main.py`
+4. Run tests - `python tests.py`
 
 ## Directory
 1. `FlowLogRecords.py`: Contains functions for loading lookup tables, processing flow logs
